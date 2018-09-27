@@ -1,5 +1,4 @@
-Audio_system_test.o: \
- /home/zxd/esp32-A1S/Audio_System_test/main/./Audio_system_test.c \
+button.o: /home/zxd/esp32-A1S/Audio_System_test/main/./button.c \
  /home/zxd/esp32-A1S/esp-adf/esp-idf/components/newlib/include/string.h \
  /home/zxd/esp32-A1S/esp-adf/esp-idf/components/newlib/include/_ansi.h \
  /home/zxd/esp32-A1S/esp-adf/esp-idf/components/newlib/include/newlib.h \
@@ -83,50 +82,10 @@ Audio_system_test.o: \
  /home/zxd/esp32-A1S/esp-adf/esp-idf/components/freertos/include/freertos/event_groups.h \
  /home/zxd/esp32-A1S/esp-adf/esp-idf/components/freertos/include/freertos/timers.h \
  /home/zxd/esp32-A1S/esp-adf/esp-idf/components/freertos/include/freertos/task.h \
- /home/zxd/esp32-A1S/esp-adf/esp-idf/components/spi_flash/include/esp_spi_flash.h \
- /home/zxd/esp32-A1S/esp-adf/esp-idf/components/log/include/esp_log.h \
- /home/zxd/esp32-A1S/esp-adf/esp-idf/components/log/include/esp_log_internal.h \
- /home/zxd/esp32-A1S/esp-adf/esp-idf/components/esp32/include/esp_wifi.h \
  /home/zxd/esp32-A1S/esp-adf/esp-idf/components/freertos/include/freertos/queue.h \
- /home/zxd/esp32-A1S/esp-adf/esp-idf/components/esp32/include/rom/queue.h \
- /home/zxd/esp32-A1S/esp-adf/esp-idf/components/esp32/include/esp_wifi_types.h \
- /home/zxd/esp32-A1S/esp-adf/esp-idf/components/esp32/include/esp_interface.h \
- /home/zxd/esp32-A1S/esp-adf/esp-idf/components/esp32/include/esp_wifi_crypto_types.h \
- /home/zxd/esp32-A1S/esp-adf/esp-idf/components/esp32/include/esp_event.h \
- /home/zxd/esp32-A1S/esp-adf/esp-idf/components/tcpip_adapter/include/tcpip_adapter.h \
- /home/zxd/esp32-A1S/esp-adf/esp-idf/components/esp32/include/rom/queue.h \
- /home/zxd/esp32-A1S/esp-adf/esp-idf/components/esp32/include/esp_wifi_types.h \
- /home/zxd/esp32-A1S/esp-adf/esp-idf/components/lwip/include/lwip/lwip/ip_addr.h \
- /home/zxd/esp32-A1S/esp-adf/esp-idf/components/lwip/include/lwip/lwip/opt.h \
- /home/zxd/esp32-A1S/esp-adf/esp-idf/components/lwip/include/lwip/port/lwipopts.h \
- /home/zxd/esp32-A1S/esp-adf/esp-idf/components/newlib/include/time.h \
- /home/zxd/esp32-A1S/esp-adf/esp-idf/components/newlib/include/machine/time.h \
- /home/zxd/esp32-A1S/esp-adf/esp-idf/components/newlib/include/unistd.h \
- /home/zxd/esp32-A1S/esp-adf/esp-idf/components/newlib/include/sys/unistd.h \
- /home/zxd/esp32-A1S/esp-adf/esp-idf/components/newlib/include/sys/time.h \
- /home/zxd/esp32-A1S/esp-adf/esp-idf/components/newlib/include/sys/fcntl.h \
- /home/zxd/esp32-A1S/esp-adf/esp-idf/components/newlib/include/sys/_default_fcntl.h \
- /home/zxd/esp32-A1S/esp-adf/esp-idf/components/newlib/include/sys/stat.h \
- /home/zxd/esp32-A1S/esp-adf/esp-idf/components/vfs/include/sys/ioctl.h \
- /home/zxd/esp32-A1S/esp-adf/esp-idf/components/esp32/include/esp_task.h \
- /home/zxd/esp32-A1S/esp-adf/esp-idf/components/lwip/include/lwip/lwip/debug.h \
- /home/zxd/esp32-A1S/esp-adf/esp-idf/components/lwip/include/lwip/lwip/arch.h \
- /home/zxd/esp32-A1S/esp-adf/esp-idf/components/lwip/include/lwip/port/arch/cc.h \
- /home/zxd/esp32-A1S/esp-adf/esp-idf/components/newlib/include/errno.h \
- /home/zxd/esp32-A1S/esp-adf/esp-idf/components/newlib/include/sys/errno.h \
- /home/zxd/esp32-A1S/esp-adf/esp-idf/components/lwip/include/lwip/port/arch/sys_arch.h \
- /home/zxd/esp32-A1S/esp-adf/esp-idf/components/freertos/include/freertos/semphr.h \
- /home/zxd/esp32-A1S/esp-adf/esp-idf/components/freertos/include/freertos/queue.h \
- /home/zxd/esp32-A1S/esp-adf/esp-idf/components/lwip/include/lwip/port/arch/vfs_lwip.h \
- /home/zxd/esp32-A1S/esp-adf/esp-idf/components/lwip/include/lwip/lwip/def.h \
- /home/zxd/esp32-A1S/esp-adf/esp-idf/components/lwip/include/lwip/lwip/ip4_addr.h \
- /home/zxd/esp32-A1S/esp-adf/esp-idf/components/lwip/include/lwip/lwip/ip6_addr.h \
- /home/zxd/esp32-A1S/esp-adf/esp-idf/components/lwip/include/lwip/apps/dhcpserver.h \
- /home/zxd/esp32-A1S/esp-adf/esp-idf/components/nvs_flash/include/nvs_flash.h \
- /home/zxd/esp32-A1S/esp-adf/esp-idf/components/nvs_flash/include/nvs.h \
- /home/zxd/esp32-A1S/Audio_System_test/main/./led.h \
+ /home/zxd/esp32-A1S/Audio_System_test/main/./button.h \
  /home/zxd/esp32-A1S/Audio_System_test/main/./Wifi.h \
- /home/zxd/esp32-A1S/Audio_System_test/main/./button.h
+ /home/zxd/esp32-A1S/Audio_System_test/main/./system_state.h
 
 /home/zxd/esp32-A1S/esp-adf/esp-idf/components/newlib/include/string.h:
 
@@ -294,91 +253,11 @@ Audio_system_test.o: \
 
 /home/zxd/esp32-A1S/esp-adf/esp-idf/components/freertos/include/freertos/task.h:
 
-/home/zxd/esp32-A1S/esp-adf/esp-idf/components/spi_flash/include/esp_spi_flash.h:
-
-/home/zxd/esp32-A1S/esp-adf/esp-idf/components/log/include/esp_log.h:
-
-/home/zxd/esp32-A1S/esp-adf/esp-idf/components/log/include/esp_log_internal.h:
-
-/home/zxd/esp32-A1S/esp-adf/esp-idf/components/esp32/include/esp_wifi.h:
-
 /home/zxd/esp32-A1S/esp-adf/esp-idf/components/freertos/include/freertos/queue.h:
 
-/home/zxd/esp32-A1S/esp-adf/esp-idf/components/esp32/include/rom/queue.h:
-
-/home/zxd/esp32-A1S/esp-adf/esp-idf/components/esp32/include/esp_wifi_types.h:
-
-/home/zxd/esp32-A1S/esp-adf/esp-idf/components/esp32/include/esp_interface.h:
-
-/home/zxd/esp32-A1S/esp-adf/esp-idf/components/esp32/include/esp_wifi_crypto_types.h:
-
-/home/zxd/esp32-A1S/esp-adf/esp-idf/components/esp32/include/esp_event.h:
-
-/home/zxd/esp32-A1S/esp-adf/esp-idf/components/tcpip_adapter/include/tcpip_adapter.h:
-
-/home/zxd/esp32-A1S/esp-adf/esp-idf/components/esp32/include/rom/queue.h:
-
-/home/zxd/esp32-A1S/esp-adf/esp-idf/components/esp32/include/esp_wifi_types.h:
-
-/home/zxd/esp32-A1S/esp-adf/esp-idf/components/lwip/include/lwip/lwip/ip_addr.h:
-
-/home/zxd/esp32-A1S/esp-adf/esp-idf/components/lwip/include/lwip/lwip/opt.h:
-
-/home/zxd/esp32-A1S/esp-adf/esp-idf/components/lwip/include/lwip/port/lwipopts.h:
-
-/home/zxd/esp32-A1S/esp-adf/esp-idf/components/newlib/include/time.h:
-
-/home/zxd/esp32-A1S/esp-adf/esp-idf/components/newlib/include/machine/time.h:
-
-/home/zxd/esp32-A1S/esp-adf/esp-idf/components/newlib/include/unistd.h:
-
-/home/zxd/esp32-A1S/esp-adf/esp-idf/components/newlib/include/sys/unistd.h:
-
-/home/zxd/esp32-A1S/esp-adf/esp-idf/components/newlib/include/sys/time.h:
-
-/home/zxd/esp32-A1S/esp-adf/esp-idf/components/newlib/include/sys/fcntl.h:
-
-/home/zxd/esp32-A1S/esp-adf/esp-idf/components/newlib/include/sys/_default_fcntl.h:
-
-/home/zxd/esp32-A1S/esp-adf/esp-idf/components/newlib/include/sys/stat.h:
-
-/home/zxd/esp32-A1S/esp-adf/esp-idf/components/vfs/include/sys/ioctl.h:
-
-/home/zxd/esp32-A1S/esp-adf/esp-idf/components/esp32/include/esp_task.h:
-
-/home/zxd/esp32-A1S/esp-adf/esp-idf/components/lwip/include/lwip/lwip/debug.h:
-
-/home/zxd/esp32-A1S/esp-adf/esp-idf/components/lwip/include/lwip/lwip/arch.h:
-
-/home/zxd/esp32-A1S/esp-adf/esp-idf/components/lwip/include/lwip/port/arch/cc.h:
-
-/home/zxd/esp32-A1S/esp-adf/esp-idf/components/newlib/include/errno.h:
-
-/home/zxd/esp32-A1S/esp-adf/esp-idf/components/newlib/include/sys/errno.h:
-
-/home/zxd/esp32-A1S/esp-adf/esp-idf/components/lwip/include/lwip/port/arch/sys_arch.h:
-
-/home/zxd/esp32-A1S/esp-adf/esp-idf/components/freertos/include/freertos/semphr.h:
-
-/home/zxd/esp32-A1S/esp-adf/esp-idf/components/freertos/include/freertos/queue.h:
-
-/home/zxd/esp32-A1S/esp-adf/esp-idf/components/lwip/include/lwip/port/arch/vfs_lwip.h:
-
-/home/zxd/esp32-A1S/esp-adf/esp-idf/components/lwip/include/lwip/lwip/def.h:
-
-/home/zxd/esp32-A1S/esp-adf/esp-idf/components/lwip/include/lwip/lwip/ip4_addr.h:
-
-/home/zxd/esp32-A1S/esp-adf/esp-idf/components/lwip/include/lwip/lwip/ip6_addr.h:
-
-/home/zxd/esp32-A1S/esp-adf/esp-idf/components/lwip/include/lwip/apps/dhcpserver.h:
-
-/home/zxd/esp32-A1S/esp-adf/esp-idf/components/nvs_flash/include/nvs_flash.h:
-
-/home/zxd/esp32-A1S/esp-adf/esp-idf/components/nvs_flash/include/nvs.h:
-
-/home/zxd/esp32-A1S/Audio_System_test/main/./led.h:
+/home/zxd/esp32-A1S/Audio_System_test/main/./button.h:
 
 /home/zxd/esp32-A1S/Audio_System_test/main/./Wifi.h:
 
-/home/zxd/esp32-A1S/Audio_System_test/main/./button.h:
-/home/zxd/esp32-A1S/Audio_System_test/main/./Audio_system_test.c:
+/home/zxd/esp32-A1S/Audio_System_test/main/./system_state.h:
+/home/zxd/esp32-A1S/Audio_System_test/main/./button.c:

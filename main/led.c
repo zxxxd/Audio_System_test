@@ -4,12 +4,14 @@
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
 #include "freertos/event_groups.h"
+#include "esp_event_loop.h"
 #include "esp_system.h"
 #include "esp_log.h"
 #include "esp_err.h"
 #include "system_state.h"
 #include "driver/ledc.h"
 #include "driver/gpio.h"
+#include "Wifi.h"
 
 /*
  * LED 相关配置信息
@@ -28,6 +30,8 @@
 
 void led_task(void * pvParameters)
 {
+	uint16_t fade_wait_time = 0;	//呼吸灯模式等待时间
+	EventBits_t system_state;
 	ledc_timer_config_t ledc_timer = {
 	        .duty_resolution = LEDC_TIMER_13_BIT, // resolution of PWM duty
 	        .freq_hz = 5000,                      // frequency of PWM signal
@@ -56,19 +60,34 @@ void led_task(void * pvParameters)
 
 	while (1)
 	{
-		printf ("this is led task.\n");
-		printf("1. LEDC fade up to duty = %d\n", LEDC_TEST_DUTY);	//亮起
-		ledc_set_fade_with_time(ledc_channel.speed_mode,
-		                    ledc_channel.channel, LEDC_TEST_DUTY, LEDC_TEST_FADE_TIME);
-		ledc_fade_start(ledc_channel.speed_mode,
-		                    ledc_channel.channel, LEDC_FADE_NO_WAIT);
-		vTaskDelay(1000 / portTICK_PERIOD_MS);		//等待硬件完成过程
-		printf("2. LEDC fade down to duty = 0\n");	//熄灭
-		ledc_set_fade_with_time(ledc_channel.speed_mode,
-		                    ledc_channel.channel, 0, LEDC_TEST_FADE_TIME);
-		ledc_fade_start(ledc_channel.speed_mode,
-		                    ledc_channel.channel, LEDC_FADE_NO_WAIT);
-		vTaskDelay(1000 / portTICK_PERIOD_MS);
+		system_state = xEventGroupGetBits(systemstate_event);
+		if ((system_state>>2)&1)
+		{
+			if (fade_wait_time == 0)
+				fade_wait_time = 18;
+			if (fade_wait_time == 18)
+			{
+				ledc_set_fade_with_time(ledc_channel.speed_mode,
+									    ledc_channel.channel, LEDC_TEST_DUTY, LEDC_TEST_FADE_TIME);
+				ledc_fade_start(ledc_channel.speed_mode,
+									    ledc_channel.channel, LEDC_FADE_NO_WAIT);
+			}
+			else if (fade_wait_time == 9)
+			{
+				ledc_set_fade_with_time(ledc_channel.speed_mode,
+						                ledc_channel.channel, 0, LEDC_TEST_FADE_TIME);
+				ledc_fade_start(ledc_channel.speed_mode,
+						                ledc_channel.channel, LEDC_FADE_NO_WAIT);
+			}
+			fade_wait_time--;
+			vTaskDelay(100 / portTICK_PERIOD_MS);		//等待硬件完成过程
+		}
+		else if(0)
+		{
+
+		}
+		//xEventGroupWaitBits();
+
 	}
 	vTaskDelete(NULL);
 
