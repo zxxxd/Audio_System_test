@@ -316,84 +316,84 @@ END GROUP
  *(.jcr)
                 0x000000003fff001c                _data_end = ABSOLUTE (.)
 
-.dram0.rodata   0x000000003fff001c     0x15bc
+.dram0.rodata   0x000000003fff001c     0x15c4
                 0x000000003fff001c                _rodata_start = ABSOLUTE (.)
  *(.rodata)
  .rodata        0x000000003fff001c       0x14 /home/zxd/esp32-A1S/Audio_System_test/build/bootloader/main/libmain.a(bootloader_start.o)
  .rodata        0x000000003fff0030        0x8 /home/zxd/esp32-A1S/Audio_System_test/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_clock.o)
  *(.rodata.*)
  .rodata.str1.4
-                0x000000003fff0038      0x956 /home/zxd/esp32-A1S/Audio_System_test/build/bootloader/main/libmain.a(bootloader_start.o)
- *fill*         0x000000003fff098e        0x2 
+                0x000000003fff0038      0x95e /home/zxd/esp32-A1S/Audio_System_test/build/bootloader/main/libmain.a(bootloader_start.o)
+ *fill*         0x000000003fff0996        0x2 
  .rodata.__func__$3804
-                0x000000003fff0990       0x10 /home/zxd/esp32-A1S/Audio_System_test/build/bootloader/main/libmain.a(bootloader_start.o)
+                0x000000003fff0998       0x10 /home/zxd/esp32-A1S/Audio_System_test/build/bootloader/main/libmain.a(bootloader_start.o)
  .rodata.str1.4
-                0x000000003fff09a0      0x28e /home/zxd/esp32-A1S/Audio_System_test/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
- *fill*         0x000000003fff0c2e        0x2 
+                0x000000003fff09a8      0x28e /home/zxd/esp32-A1S/Audio_System_test/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_flash.o)
+ *fill*         0x000000003fff0c36        0x2 
  .rodata.str1.4
-                0x000000003fff0c30       0xfb /home/zxd/esp32-A1S/Audio_System_test/build/bootloader/bootloader_support/libbootloader_support.a(flash_partitions.o)
- *fill*         0x000000003fff0d2b        0x1 
+                0x000000003fff0c38       0xfb /home/zxd/esp32-A1S/Audio_System_test/build/bootloader/bootloader_support/libbootloader_support.a(flash_partitions.o)
+ *fill*         0x000000003fff0d33        0x1 
  .rodata.str1.4
-                0x000000003fff0d2c      0x45a /home/zxd/esp32-A1S/Audio_System_test/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
+                0x000000003fff0d34      0x45a /home/zxd/esp32-A1S/Audio_System_test/build/bootloader/bootloader_support/libbootloader_support.a(esp_image_format.o)
                                         0x49a (size before relaxing)
- *fill*         0x000000003fff1186        0x2 
+ *fill*         0x000000003fff118e        0x2 
  .rodata.str1.4
-                0x000000003fff1188       0xd4 /home/zxd/esp32-A1S/Audio_System_test/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_sha.o)
+                0x000000003fff1190       0xd4 /home/zxd/esp32-A1S/Audio_System_test/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_sha.o)
  .rodata.padding$2493
-                0x000000003fff125c       0x40 /home/zxd/esp32-A1S/Audio_System_test/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_sha.o)
+                0x000000003fff1264       0x40 /home/zxd/esp32-A1S/Audio_System_test/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_sha.o)
  .rodata.__func__$2489
-                0x000000003fff129c       0x19 /home/zxd/esp32-A1S/Audio_System_test/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_sha.o)
- *fill*         0x000000003fff12b5        0x3 
+                0x000000003fff12a4       0x19 /home/zxd/esp32-A1S/Audio_System_test/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_sha.o)
+ *fill*         0x000000003fff12bd        0x3 
  .rodata.__func__$2469
-                0x000000003fff12b8       0x17 /home/zxd/esp32-A1S/Audio_System_test/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_sha.o)
- *fill*         0x000000003fff12cf        0x1 
+                0x000000003fff12c0       0x17 /home/zxd/esp32-A1S/Audio_System_test/build/bootloader/bootloader_support/libbootloader_support.a(bootloader_sha.o)
+ *fill*         0x000000003fff12d7        0x1 
  .rodata.str1.4
-                0x000000003fff12d0      0x260 /home/zxd/esp32-A1S/Audio_System_test/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x000000003fff12d8      0x260 /home/zxd/esp32-A1S/Audio_System_test/build/bootloader/soc/libsoc.a(rtc_clk.o)
                                         0x25d (size before relaxing)
  .rodata.rtc_clk_xtal_freq_estimate
-                0x000000003fff1530       0x64 /home/zxd/esp32-A1S/Audio_System_test/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x000000003fff1538       0x64 /home/zxd/esp32-A1S/Audio_System_test/build/bootloader/soc/libsoc.a(rtc_clk.o)
  .rodata.rtc_clk_cpu_freq_value
-                0x000000003fff1594       0x14 /home/zxd/esp32-A1S/Audio_System_test/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x000000003fff159c       0x14 /home/zxd/esp32-A1S/Audio_System_test/build/bootloader/soc/libsoc.a(rtc_clk.o)
  .rodata.__func__$2616
-                0x000000003fff15a8       0x17 /home/zxd/esp32-A1S/Audio_System_test/build/bootloader/soc/libsoc.a(rtc_clk.o)
- *fill*         0x000000003fff15bf        0x1 
+                0x000000003fff15b0       0x17 /home/zxd/esp32-A1S/Audio_System_test/build/bootloader/soc/libsoc.a(rtc_clk.o)
+ *fill*         0x000000003fff15c7        0x1 
  .rodata.__func__$2601
-                0x000000003fff15c0       0x15 /home/zxd/esp32-A1S/Audio_System_test/build/bootloader/soc/libsoc.a(rtc_clk.o)
+                0x000000003fff15c8       0x15 /home/zxd/esp32-A1S/Audio_System_test/build/bootloader/soc/libsoc.a(rtc_clk.o)
  *(.gnu.linkonce.r.*)
  *(.rodata1)
-                0x000000003fff15d5                __XT_EXCEPTION_TABLE_ = ABSOLUTE (.)
+                0x000000003fff15dd                __XT_EXCEPTION_TABLE_ = ABSOLUTE (.)
  *(.xt_except_table)
  *(.gcc_except_table)
  *(.gnu.linkonce.e.*)
  *(.gnu.version_r)
  *(.eh_frame)
-                0x000000003fff15d8                . = ((. + 0x3) & 0xfffffffffffffffc)
- *fill*         0x000000003fff15d5        0x3 
-                0x000000003fff15d8                __init_array_start = ABSOLUTE (.)
+                0x000000003fff15e0                . = ((. + 0x3) & 0xfffffffffffffffc)
+ *fill*         0x000000003fff15dd        0x3 
+                0x000000003fff15e0                __init_array_start = ABSOLUTE (.)
  *crtbegin.o(.ctors)
  *(EXCLUDE_FILE(*crtend.o) .ctors)
  *(SORT(.ctors.*))
  *(.ctors)
-                0x000000003fff15d8                __init_array_end = ABSOLUTE (.)
+                0x000000003fff15e0                __init_array_end = ABSOLUTE (.)
  *crtbegin.o(.dtors)
  *(EXCLUDE_FILE(*crtend.o) .dtors)
  *(SORT(.dtors.*))
  *(.dtors)
-                0x000000003fff15d8                __XT_EXCEPTION_DESCS_ = ABSOLUTE (.)
+                0x000000003fff15e0                __XT_EXCEPTION_DESCS_ = ABSOLUTE (.)
  *(.xt_except_desc)
  *(.gnu.linkonce.h.*)
-                0x000000003fff15d8                __XT_EXCEPTION_DESCS_END__ = ABSOLUTE (.)
+                0x000000003fff15e0                __XT_EXCEPTION_DESCS_END__ = ABSOLUTE (.)
  *(.xt_except_desc_end)
  *(.dynamic)
  *(.gnu.version_d)
-                0x000000003fff15d8                _rodata_end = ABSOLUTE (.)
-                0x000000003fff15d8                _lit4_start = ABSOLUTE (.)
+                0x000000003fff15e0                _rodata_end = ABSOLUTE (.)
+                0x000000003fff15e0                _lit4_start = ABSOLUTE (.)
  *(*.lit4)
  *(.lit4.*)
  *(.gnu.linkonce.lit4.*)
-                0x000000003fff15d8                _lit4_end = ABSOLUTE (.)
-                0x000000003fff15d8                . = ALIGN (0x4)
-                0x000000003fff15d8                _heap_start = ABSOLUTE (.)
+                0x000000003fff15e0                _lit4_end = ABSOLUTE (.)
+                0x000000003fff15e0                . = ALIGN (0x4)
+                0x000000003fff15e0                _heap_start = ABSOLUTE (.)
 
 .iram.text      0x0000000040078000     0x35c3
                 0x0000000040078000                _stext = .

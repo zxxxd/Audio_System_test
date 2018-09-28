@@ -106,7 +106,7 @@ i2s_stream.o: \
  /home/zxd/esp32-A1S/esp-adf/components/audio_pipeline/include/audio_common.h \
  /home/zxd/esp32-A1S/esp-adf/components/audio_stream/include/i2s_stream.h \
  /home/zxd/esp32-A1S/esp-adf/components/audio_hal/./board/board.h \
- /home/zxd/esp32-A1S/esp-adf/components/audio_hal/./board/lyrat_v4_3_board.h \
+ /home/zxd/esp32-A1S/esp-adf/components/audio_hal/./board/ai_audio_v1_0_board.h \
  /home/zxd/esp32-A1S/esp-adf/components/audio_sal/./include/audio_error.h
 
 /home/zxd/esp32-A1S/esp-adf/esp-idf/components/newlib/include/stdlib.h:
@@ -321,7 +321,7 @@ i2s_stream.o: \
 
 /home/zxd/esp32-A1S/esp-adf/components/audio_hal/./board/board.h:
 
-/home/zxd/esp32-A1S/esp-adf/components/audio_hal/./board/lyrat_v4_3_board.h:
+/home/zxd/esp32-A1S/esp-adf/components/audio_hal/./board/ai_audio_v1_0_board.h:
 
 /home/zxd/esp32-A1S/esp-adf/components/audio_sal/./include/audio_error.h:
 /home/zxd/esp32-A1S/esp-adf/components/audio_stream/./i2s_stream.c:

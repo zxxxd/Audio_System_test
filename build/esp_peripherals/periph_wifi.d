@@ -123,7 +123,7 @@ periph_wifi.o: \
  /home/zxd/esp32-A1S/esp-adf/esp-idf/components/log/include/esp_log_internal.h \
  /home/zxd/esp32-A1S/esp-adf/esp-idf/components/esp32/include/esp_smartconfig.h \
  /home/zxd/esp32-A1S/esp-adf/components/audio_hal/./board/board.h \
- /home/zxd/esp32-A1S/esp-adf/components/audio_hal/./board/lyrat_v4_3_board.h \
+ /home/zxd/esp32-A1S/esp-adf/components/audio_hal/./board/ai_audio_v1_0_board.h \
  /home/zxd/esp32-A1S/esp-adf/components/esp_peripherals/include/periph_wifi.h \
  /home/zxd/esp32-A1S/esp-adf/components/audio_sal/./include/audio_error.h \
  /home/zxd/esp32-A1S/esp-adf/components/audio_pipeline/include/audio_common.h \
@@ -380,7 +380,7 @@ periph_wifi.o: \
 
 /home/zxd/esp32-A1S/esp-adf/components/audio_hal/./board/board.h:
 
-/home/zxd/esp32-A1S/esp-adf/components/audio_hal/./board/lyrat_v4_3_board.h:
+/home/zxd/esp32-A1S/esp-adf/components/audio_hal/./board/ai_audio_v1_0_board.h:
 
 /home/zxd/esp32-A1S/esp-adf/components/esp_peripherals/include/periph_wifi.h:
 

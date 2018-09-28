@@ -91,8 +91,7 @@ driver/es8388/es8388.o: \
  /home/zxd/esp32-A1S/esp-adf/components/audio_hal/include/audio_hal.h \
  /home/zxd/esp32-A1S/esp-adf/components/audio_sal/./include/audio_error.h \
  /home/zxd/esp32-A1S/esp-adf/components/audio_hal/board/board.h \
- /home/zxd/esp32-A1S/esp-adf/components/audio_hal/board/lyrat_v4_3_board.h \
- /home/zxd/esp32-A1S/esp-adf/components/audio_hal/./driver/es8388/headphone_detect.h
+ /home/zxd/esp32-A1S/esp-adf/components/audio_hal/board/ai_audio_v1_0_board.h
 
 /home/zxd/esp32-A1S/esp-adf/esp-idf/components/newlib/include/string.h:
 
@@ -276,7 +275,5 @@ driver/es8388/es8388.o: \
 
 /home/zxd/esp32-A1S/esp-adf/components/audio_hal/board/board.h:
 
-/home/zxd/esp32-A1S/esp-adf/components/audio_hal/board/lyrat_v4_3_board.h:
-
-/home/zxd/esp32-A1S/esp-adf/components/audio_hal/./driver/es8388/headphone_detect.h:
+/home/zxd/esp32-A1S/esp-adf/components/audio_hal/board/ai_audio_v1_0_board.h:
 /home/zxd/esp32-A1S/esp-adf/components/audio_hal/./driver/es8388/es8388.c:

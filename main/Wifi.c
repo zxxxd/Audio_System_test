@@ -52,18 +52,18 @@ esp_err_t SmartCfg_event_handler(void *ctx, system_event_t *event)
 void initialise_wifi(void)
 {
 	bool auto_connect_flag;
+    wifi_init_config_t cfg = WIFI_INIT_CONFIG_DEFAULT();
     tcpip_adapter_init();
     s_wifi_event_group = xEventGroupCreate();
     ESP_ERROR_CHECK( esp_event_loop_init(SmartCfg_event_handler, NULL) );
-
-    wifi_init_config_t cfg = WIFI_INIT_CONFIG_DEFAULT();
-
     ESP_ERROR_CHECK( esp_wifi_init(&cfg) );
     ESP_ERROR_CHECK( esp_wifi_set_mode(WIFI_MODE_STA) );
     ESP_ERROR_CHECK( esp_wifi_start());
     ESP_ERROR_CHECK(esp_wifi_get_auto_connect(&auto_connect_flag));
     if (auto_connect_flag == 0)
     	ESP_ERROR_CHECK(esp_wifi_set_auto_connect(1));
+
+
 
 
 }

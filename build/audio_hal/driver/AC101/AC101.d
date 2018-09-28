@@ -91,7 +91,7 @@ driver/AC101/AC101.o: \
  /home/zxd/esp32-A1S/esp-adf/esp-idf/components/freertos/include/freertos/queue.h \
  /home/zxd/esp32-A1S/esp-adf/esp-idf/components/freertos/include/freertos/ringbuf.h \
  /home/zxd/esp32-A1S/esp-adf/components/audio_hal/board/board.h \
- /home/zxd/esp32-A1S/esp-adf/components/audio_hal/board/lyrat_v4_3_board.h
+ /home/zxd/esp32-A1S/esp-adf/components/audio_hal/board/ai_audio_v1_0_board.h
 
 /home/zxd/esp32-A1S/esp-adf/components/audio_hal/./driver/AC101/AC101.h:
 
@@ -275,5 +275,5 @@ driver/AC101/AC101.o: \
 
 /home/zxd/esp32-A1S/esp-adf/components/audio_hal/board/board.h:
 
-/home/zxd/esp32-A1S/esp-adf/components/audio_hal/board/lyrat_v4_3_board.h:
+/home/zxd/esp32-A1S/esp-adf/components/audio_hal/board/ai_audio_v1_0_board.h:
 /home/zxd/esp32-A1S/esp-adf/components/audio_hal/./driver/AC101/AC101.c:

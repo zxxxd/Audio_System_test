@@ -12,53 +12,57 @@
 #define GPIO_MODE_PIN 21
 #define ESP_INTR_FLAG_DEFAULT 0
 #define GPIO_PIN_ISR  (1ULL<<GPIO_MODE_PIN)
+static xQueueHandle gpio_evt_queue = NULL;
+
+static BaseType_t pxTaskWorken, xResult;
 
 static void IRAM_ATTR gpio_isr_handler(void* arg)
 {
-    uint32_t gpio_num = (uint32_t) arg;
-	BaseType_t xHigherPriorityTaskWoken, xResult;
-	printf ("detected button!\n");
-	//如果中断程序内没有信号量就会 发生重启！！！
-    /*xResult = xEventGroupSetBitsFromISR(systemstate_event,SS_Bit4,&xHigherPriorityTaskWoken);
-    // Was the message posted successfully?
-          if( xResult == pdFALSE )
-          {
-              // If xHigherPriorityTaskWoken is now set to pdTRUE then a context
-              // switch should be requested.  The macro used is port specific and
-              // will be either portYIELD_FROM_ISR() or portEND_SWITCHING_ISR() -
-              // refer to the documentation page for the port being used.
-              //portYIELD_FROM_ISR( xHigherPriorityTaskWoken );
-        	  printf ("Button set Event failed!!\n");
-          }
-          else
-          {
-        	  printf ("Button set Event success!\n");
-          }*/
+	xResult = xEventGroupSetBitsFromISR(systemstate_event,SS_Bit4, &pxTaskWorken);	//给按键中断位发送标志
+	if (xResult == pdFALSE)		//任务切换失败
+	{
+		portYIELD_FROM_ISR();
+	}
+}
+
+static void gpio_task_example(void* arg)
+{
+	int i = 0;
+	EventBits_t uxBits;
+	for(;;) {
+		uxBits = xEventGroupWaitBits(systemstate_event,SS_Bit4,pdTRUE,pdTRUE,1000 / portTICK_PERIOD_MS);	//接收按键中断标志
+		if ((( uxBits & SS_Bit4 ) != 0) && (!gpio_get_level(GPIO_MODE_PIN)))
+		{
+			vTaskDelay(1000 / portTICK_PERIOD_MS);
+			if (!gpio_get_level(GPIO_MODE_PIN))
+			{
+				printf("Mode pin: %d\n", i++);		//检测到按键按下
+
+			}
+		}
+	}
 }
 
 void button_task(void *parm)
 {
 	gpio_config_t io_conf;
-
 	io_conf.pull_down_en = 0;
 	io_conf.pull_up_en = 0;
-	io_conf.intr_type = GPIO_PIN_INTR_POSEDGE;
+	io_conf.intr_type = GPIO_INTR_NEGEDGE;	//下降沿中断
 	io_conf.pin_bit_mask = GPIO_PIN_ISR;
 	io_conf.mode = GPIO_MODE_INPUT;
-
-
 	gpio_config(&io_conf);
+
+	gpio_evt_queue = xQueueCreate(10, sizeof(uint32_t));
+
+	xTaskCreate(gpio_task_example, "gpio_task_example", 4096, NULL, 1, NULL);
 
 	//install gpio isr service
 	gpio_install_isr_service(ESP_INTR_FLAG_DEFAULT);
-	//hook isr handler for specific gpio pin
 	gpio_isr_handler_add(GPIO_MODE_PIN, gpio_isr_handler, (void*)GPIO_MODE_PIN);
-	gpio_intr_enable(GPIO_PIN_ISR);
-
 
 	while(1)
 	{
 		vTaskDelay(1000 / portTICK_PERIOD_MS);
-		printf("Button task.\n");
 	}
 }

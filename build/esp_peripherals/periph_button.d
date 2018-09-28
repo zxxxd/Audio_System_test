@@ -86,7 +86,7 @@ periph_button.o: \
  /home/zxd/esp32-A1S/esp-adf/esp-idf/components/freertos/include/freertos/list.h \
  /home/zxd/esp32-A1S/esp-adf/esp-idf/components/freertos/include/freertos/queue.h \
  /home/zxd/esp32-A1S/esp-adf/components/audio_hal/./board/board.h \
- /home/zxd/esp32-A1S/esp-adf/components/audio_hal/./board/lyrat_v4_3_board.h \
+ /home/zxd/esp32-A1S/esp-adf/components/audio_hal/./board/ai_audio_v1_0_board.h \
  /home/zxd/esp32-A1S/esp-adf/components/esp_peripherals/lib/button/button.h \
  /home/zxd/esp32-A1S/esp-adf/components/audio_sal/./include/audio_error.h \
  /home/zxd/esp32-A1S/esp-adf/components/esp_peripherals/include/periph_button.h \
@@ -270,7 +270,7 @@ periph_button.o: \
 
 /home/zxd/esp32-A1S/esp-adf/components/audio_hal/./board/board.h:
 
-/home/zxd/esp32-A1S/esp-adf/components/audio_hal/./board/lyrat_v4_3_board.h:
+/home/zxd/esp32-A1S/esp-adf/components/audio_hal/./board/ai_audio_v1_0_board.h:
 
 /home/zxd/esp32-A1S/esp-adf/components/esp_peripherals/lib/button/button.h:
 

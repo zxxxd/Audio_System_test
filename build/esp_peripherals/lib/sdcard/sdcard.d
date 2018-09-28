@@ -108,7 +108,7 @@ lib/sdcard/sdcard.o: \
  /home/zxd/esp32-A1S/esp-adf/components/esp_peripherals/./lib/sdcard/sdcard.h \
  /home/zxd/esp32-A1S/esp-adf/components/audio_sal/./include/audio_error.h \
  /home/zxd/esp32-A1S/esp-adf/components/audio_hal/./board/board.h \
- /home/zxd/esp32-A1S/esp-adf/components/audio_hal/./board/lyrat_v4_3_board.h
+ /home/zxd/esp32-A1S/esp-adf/components/audio_hal/./board/ai_audio_v1_0_board.h
 
 /home/zxd/esp32-A1S/esp-adf/esp-idf/components/newlib/include/string.h:
 
@@ -326,5 +326,5 @@ lib/sdcard/sdcard.o: \
 
 /home/zxd/esp32-A1S/esp-adf/components/audio_hal/./board/board.h:
 
-/home/zxd/esp32-A1S/esp-adf/components/audio_hal/./board/lyrat_v4_3_board.h:
+/home/zxd/esp32-A1S/esp-adf/components/audio_hal/./board/ai_audio_v1_0_board.h:
 /home/zxd/esp32-A1S/esp-adf/components/esp_peripherals/./lib/sdcard/sdcard.c:

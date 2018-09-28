@@ -82,9 +82,9 @@ void led_task(void * pvParameters)
 			fade_wait_time--;
 			vTaskDelay(100 / portTICK_PERIOD_MS);		//等待硬件完成过程
 		}
-		else if(0)
+		else
 		{
-
+			vTaskDelay(100 / portTICK_PERIOD_MS);
 		}
 		//xEventGroupWaitBits();
 

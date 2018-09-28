@@ -90,7 +90,7 @@ driver/es8374/es8374.o: \
  /home/zxd/esp32-A1S/esp-adf/components/audio_sal/./include/audio_error.h \
  /home/zxd/esp32-A1S/esp-adf/components/audio_hal/driver/es8388/es8388.h \
  /home/zxd/esp32-A1S/esp-adf/components/audio_hal/board/board.h \
- /home/zxd/esp32-A1S/esp-adf/components/audio_hal/board/lyrat_v4_3_board.h
+ /home/zxd/esp32-A1S/esp-adf/components/audio_hal/board/ai_audio_v1_0_board.h
 
 /home/zxd/esp32-A1S/esp-adf/esp-idf/components/esp32/include/esp_system.h:
 
@@ -272,5 +272,5 @@ driver/es8374/es8374.o: \
 
 /home/zxd/esp32-A1S/esp-adf/components/audio_hal/board/board.h:
 
-/home/zxd/esp32-A1S/esp-adf/components/audio_hal/board/lyrat_v4_3_board.h:
+/home/zxd/esp32-A1S/esp-adf/components/audio_hal/board/ai_audio_v1_0_board.h:
 /home/zxd/esp32-A1S/esp-adf/components/audio_hal/./driver/es8374/es8374.c:

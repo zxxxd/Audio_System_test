@@ -12,12 +12,13 @@
 #include "led.h"
 #include "Wifi.h"
 #include "button.h"
+//中断里不能放printf，否则会重启
 
 #define LED_TASK_SIZE 4096
 #define LED_TASK_PRIO 1
 TaskHandle_t LED_TASK_Handle = NULL;
-
 EventGroupHandle_t systemstate_event;
+
 
 void app_main()
 {
@@ -27,14 +28,13 @@ void app_main()
 	systemstate_event = xEventGroupCreate();
 	xEventGroupClearBits(systemstate_event, 0x00);
 	xTaskCreate(led_task,"led task",LED_TASK_SIZE,&ucParameterToPass,LED_TASK_PRIO,&LED_TASK_Handle);
-	xTaskCreate(button_task,"button_task", 4096, NULL,1,NULL);
+	xTaskCreate(button_task,"button_task", 10240, NULL,2,NULL);
 	initialise_wifi();
-
 	while(1)
 	{
-		vTaskDelay(1000 / portTICK_PERIOD_MS);
-		uint32_t x = xPortGetMinimumEverFreeHeapSize();
-		printf ("The app_main unallocated memory heap size is:%d\n",x);
+		vTaskDelay(1000 / portTICK_RATE_MS);
 	}
 }
+
+
 
