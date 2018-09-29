@@ -125,7 +125,8 @@ Wifi.o: /home/zxd/esp32-A1S/Audio_System_test/main/./Wifi.c \
  /home/zxd/esp32-A1S/esp-adf/esp-idf/components/nvs_flash/include/nvs_flash.h \
  /home/zxd/esp32-A1S/esp-adf/esp-idf/components/nvs_flash/include/nvs.h \
  /home/zxd/esp32-A1S/esp-adf/esp-idf/components/esp32/include/esp_smartconfig.h \
- /home/zxd/esp32-A1S/Audio_System_test/main/./Wifi.h
+ /home/zxd/esp32-A1S/Audio_System_test/main/./Wifi.h \
+ /home/zxd/esp32-A1S/Audio_System_test/main/./system_state.h
 
 /home/zxd/esp32-A1S/esp-adf/esp-idf/components/newlib/include/string.h:
 
@@ -380,4 +381,6 @@ Wifi.o: /home/zxd/esp32-A1S/Audio_System_test/main/./Wifi.c \
 /home/zxd/esp32-A1S/esp-adf/esp-idf/components/esp32/include/esp_smartconfig.h:
 
 /home/zxd/esp32-A1S/Audio_System_test/main/./Wifi.h:
+
+/home/zxd/esp32-A1S/Audio_System_test/main/./system_state.h:
 /home/zxd/esp32-A1S/Audio_System_test/main/./Wifi.c:

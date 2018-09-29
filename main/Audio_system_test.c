@@ -28,11 +28,12 @@ void app_main()
 	systemstate_event = xEventGroupCreate();
 	xEventGroupClearBits(systemstate_event, 0x00);
 	xTaskCreate(led_task,"led task",LED_TASK_SIZE,&ucParameterToPass,LED_TASK_PRIO,&LED_TASK_Handle);
-	xTaskCreate(button_task,"button_task", 10240, NULL,2,NULL);
 	initialise_wifi();
+	xTaskCreate(button_task,"button_task", 2048, NULL,2,NULL);
 	while(1)
 	{
-		vTaskDelay(1000 / portTICK_RATE_MS);
+		printf ("hello\n");
+		vTaskDelay(5000 / portTICK_RATE_MS);
 	}
 }
 

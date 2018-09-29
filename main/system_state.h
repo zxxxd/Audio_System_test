@@ -2,7 +2,7 @@
 /***
  * systemstate_event的各个位，适用于 xEventGroupSetBits() 等函数
  */
-#define SS_Bit0 1<<0
+#define SS_Bit0 1<<0	//smart_config 运行标志
 #define SS_Bit1 1<<1
 #define SS_Bit2 1<<2
 #define SS_Bit3 1<<3
